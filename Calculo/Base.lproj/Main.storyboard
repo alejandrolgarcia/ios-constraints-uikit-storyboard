@@ -69,6 +69,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Calcular">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UQb-aX-Tze"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-b8-a36">
                                 <rect key="frame" x="16" y="353" width="382" height="42"/>
@@ -80,6 +83,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Limpiar">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qE4-q7-zab"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -111,6 +117,12 @@
                             <constraint firstItem="Ype-nD-QQM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yFI-x2-yYg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cantidadtxt" destination="0GD-pK-fwc" id="J2c-Wd-7Wj"/>
+                        <outlet property="porcentajetxt" destination="gCA-cA-wuR" id="IZv-vW-VH6"/>
+                        <outlet property="resultado" destination="KaF-g2-tka" id="F69-Uw-i9z"/>
+                        <outlet property="resultadoDescuento" destination="KGa-yY-ctU" id="xOE-nf-qdh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
